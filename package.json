@@ -1,0 +1,42 @@
+{
+  "name": "tio-bob",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rm -Rf ./dist",
+    "start": "npm run clean && gulp --colors && gulp watch --colors",
+    "build": "npm run clean && gulp --colors --production",
+    "vtex": "npm run build && gulp watch --colors --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/jefferson-cavalcante/tio-bob"
+  },
+  "author": {
+    "name": "Rodrigo Araujo",
+    "email": "rodrigo.araujo@agenciaeconverse.com.br"
+  },
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/jefferson-cavalcante/tio-bob#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "gulp": "^3.9.1",
+    "taskerify": "^1.5.5"
+  },
+  "dependencies": {
+    "initialize-css": "^1.4.0",
+    "jquery.cookie": "^1.4.1",
+    "js-cookie": "^2.2.0",
+    "rivets-utilify": "^0.1.0",
+    "sass-rem": "^2.0.1",
+    "scss-form-reset": "0.0.3",
+    "vtex-catalog": "^1.2.1",
+    "vtex-masterdata": "^0.3.3",
+    "vtex-utils": "^1.15.0"
+  },
+  "engines": {
+    "node": ">= 6.9.0"
+  }
+}
