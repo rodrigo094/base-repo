@@ -1,0 +1,150 @@
+.e-products__list {
+	// @include container();
+	.vitrine {
+		ul {
+			li {
+				float: left;
+				width: 50%;
+				.e-vitrine {
+					padding: 5px;
+					min-height: 275px;
+					display: block;
+					&__image {
+						display: block;
+						max-height: 325px;
+						overflow: hidden;
+						img {
+							display: block;
+							height: auto;
+							width: 100%;
+							max-width: 325px;
+							margin: 0 auto;
+							transform: transition(ease all 0.3s);
+						}
+						&:hover {
+							img {
+								max-width: 345px;
+							}
+						}
+					}
+					&__name {
+						margin: 20px 0 10px;
+						h2 {
+							line-height: 1.4;
+							font-weight: bold;
+							font-size: 12px;
+							text-transform: uppercase;
+							display: block;
+							text-align: center;
+							height: 36px;
+    						overflow: hidden;
+							a {
+								color: #000;
+							}
+						}
+					}
+					&__price {
+						margin: 10px 0;
+						text-align: center;
+						color: #000;
+						font-weight: 600;
+						text-transform: uppercase;
+						height: 39px;
+						overflow: hidden;
+						&-old {
+							display: inline-block();
+							text-decoration: line-through;
+							font-size: 12px;
+							margin: 5px 2px;
+						}
+						&-best {
+							display: inline-block();
+							font-size: 12px;
+							margin: 5px 2px;
+						}
+						&-installments {
+							display: block;
+							margin: 5px 0;
+							font-size: 12px;
+						}
+					}
+					&__buy-button {
+						a {
+							display: block;
+							width: 100%;
+							height: 32px;
+							line-height: 32px;
+							background-color: #e2e2e2;
+							color: #5f5f5f;
+							font-size: 14px;
+							font-weight: bold;
+							text-align: center;
+							text-decoration: none;
+							text-transform: uppercase;
+							letter-spacing: 2px;
+							outline: 0;
+							border: 0;
+						}
+					}
+					&__out-of-stock {
+						text-align: center;
+						font-size: 13px;
+						font-weight: 600;
+						color: #f00;
+						text-transform: uppercase;
+						margin: 10px 0;
+						span {
+							display: inline-block();
+							margin: 4px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slick-slider {
+		.slick-list {
+			// @include container();
+			overflow: hidden;
+
+			li{
+				// opacity: 0;
+				// visibility: hidden;
+				// &.slick-slide{
+				// 	opacity: 1;
+				// 	visibility: visible;
+				// }
+			}
+			
+			.slick-slide, a {
+				outline: 0;
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+			top: 50%;
+			margin-top: -14px;
+			background: transparent;
+			text-indent: -9999px;
+			z-index: 10;
+			cursor: pointer;
+			outline: 0;
+
+			&.slick-prev {
+				//@include sprite($icon-vitrine-prev);
+				left: 10px;
+			}
+			&.slick-next {
+				//@include sprite($icon-vitrine-next);
+				right: 10px;
+			}
+
+			&.slick-disabled {
+				opacity: 0.3;
+				cursor: default;
+			}
+		}
+	}
+}

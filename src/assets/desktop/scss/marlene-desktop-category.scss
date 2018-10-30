@@ -1,0 +1,322 @@
+
+
+.e-general {
+    &__breadcrumb {
+        .bread-crumb {
+            ul {
+                display: flex;
+                li {
+                    display: none;
+                    &.last {
+                        display: inline-block !important;
+                        padding: 20px;
+                        a {
+                            color: #5f5f5f;
+                            text-transform: uppercase;
+                            font-family: "Lato";
+                            font-weight: 600;
+                            font-size: 25px;
+                            letter-spacing: 5px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__sidebar {
+        &--bg {
+            &-filters {
+                .navigation-tabs {
+                    .menu-departamento {
+                        .menu-navegue {
+                            display: none;
+                        }
+                        .search-multiple-navigator {
+                            display: flex !important;
+                            position: relative;
+                            .bt-refinar,
+                            h3 {
+                                display: none;
+                            }
+                            h4 {
+                                width: 150px;
+                                padding-bottom: 5px;
+                                border-bottom: 1px solid #7b7b7b;
+                                margin: 0 10px 10px 20px;
+                                a {
+                                    color: #7b7b7b;
+                                    font-family: 'Lato', sans-serif;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    font-size: 14px;
+                                    letter-spacing: 2px;
+                                    z-index: 9999;
+                                    text-decoration: none;
+                                }
+                            }
+                            fieldset {
+                                margin-right: 30px;
+                                width: 150px;
+                                z-index: 9999;
+                                &:last-child{
+                                    display: none;
+                                }
+                                h5 {    
+                                    width: 100%;
+                                    padding-bottom: 5px;
+                                    border-bottom: 1px solid #7b7b7b;
+                                    margin: 0 50px 10px 20px;
+                                    color: #7b7b7b;
+                                    font-family: 'Lato', sans-serif;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    letter-spacing: 2px;
+                                    &:after {
+                                        content: '';
+                                        background: url(/arquivos/down-arrow.png) no-repeat center;
+                                        width: 20px;
+                                        height: 20px;
+                                        display: inline-block;
+                                        right: -150px;
+                                        position: relative;
+                                        background-size: 15px;
+                                        top: 5px;
+                                    }
+                                    &.Características {
+                                        &:after {
+                                            right: -100px;
+                                        }
+                                    }
+                                    &.Sku {
+                                        &:after {
+                                            right: -55px;
+                                        }
+                                    }
+                                }
+                                >div {
+                                    display: none !important;
+                                    &.e-active {
+                                        display: flex !important;
+                                        flex-direction: column;
+                                        position: absolute;
+                                        background: #e2e2e2;
+                                        margin-left: 20px;
+                                        padding: 10px;
+                                        top: 30px;
+                                        label {
+                                            color: #7b7b7b;
+                                            padding: 10px 5px;
+                                            font-size: 13px;
+                                            text-transform: uppercase;
+                                            letter-spacing: 1px;
+                                            input {
+                                                margin: 0 10px 0 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-single-navigator {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__content {
+        &--shelve {
+            .main {
+                .searchResultsTime {
+                    display: none;
+                }
+                .sub {              
+                    .resultado-busca-filtro {
+                        display: flex;
+                        justify-content: flex-end;
+                        .filterBy,
+                        .compare {
+                            display: none;
+                        }
+                        .orderBy {
+                            margin-right: 20px;
+                            label,
+                            select {
+                                display: none;
+                            }
+                            .e-group-orderby {
+                                span {
+                                    display: inline-block;
+                                    padding: 5px 30px;
+                                    border: none;
+                                    color: #7b7b7b;
+                                    letter-spacing: 2px;
+                                    cursor: pointer;
+                                    border-bottom: 1px solid #7b7b7b;
+                                    padding: 5px 30px 5px 0;
+                                    font-size: 14px;
+                                    &:after {
+                                        content: '';
+                                        background: url(/arquivos/down-arrow.png) no-repeat center;
+                                        width: 15px;
+                                        height: 10px;
+                                        display: inline-block;
+                                        background-size: 15px;
+                                        right: -20px;
+                                        position: relative;
+                                    }
+                                }
+                                ul {
+                                    display: none;
+                                    flex-direction: column;
+                                    color: #000;
+                                    background: #e2e2e2;
+                                    border: 1px solid #000;
+                                    position: absolute;
+                                    padding: 22px;
+                                    z-index: 9999;
+                                    li {
+                                        padding: 5px 0;
+                                        cursor: pointer;
+                                    }
+                                    &.e-active {
+                                        display: flex;
+                                        flex-direction: column;
+                                        color: #000;
+                                        background: #e2e2e2;
+                                        border: 1px solid #000;
+                                        position: absolute;
+                                        padding: 22px;
+                                        z-index: 9999;
+                                        li {
+                                            padding: 5px 0;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .top,
+                .bottom {
+                    display: none;
+                }
+                .prateleira {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        position: relative;
+                        left: 0;
+                        padding: 0 40px;
+                        li {
+                            width: 33.33% !important;
+                            display: flex !important;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 20px 0;
+                            transition: linear .2s;
+                            height: auto;
+                            &.helperComplement {
+                                display: none !important;
+                            }
+                            .productItem {
+                                width: 80%;
+                                height: auto;
+                                text-align: center;
+                                .productImage {
+                                    width: 100%;
+                                    height: auto;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    .details {
+                                        display: none;
+                                    }
+                                }
+                                .data {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    .trustvox-showcase {
+                                        display: none;
+                                    }
+                                    .lead {
+                                        padding: 10px 0;
+                                        padding-bottom: 0;
+                                        a {
+                                            color: #000;
+                                            white-space: pre;
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                    .price {
+                                        a {
+                                            display: flex;
+                                            flex-direction: column;
+                                            color: #000;
+                                            font-size: 13px;
+                                            .left {
+                                                text-align: center;
+                                                padding: 10px 0;
+                                                .bestPrice {
+                                                    &:before {
+                                                        content: 'Por:';
+                                                        font-size: 13px;
+                                                        color: #000;
+                                                        margin-right: 5px;
+                                                    }
+                                                }
+                                            }
+                                            .center {
+                                                display: none;
+                                            }
+                                            .right {
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                    .buy-button {
+                                        margin: 20px 0;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transition: linear .2s;
+                                        bottom: -40px;
+                                        a {
+                                            background: #e2e2e2;
+                                            color: #5f5f5f;
+                                            text-transform: uppercase;
+                                            padding: 10px 100px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .productItem {
+                                    .data {
+                                        .buy-button {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            a {
+                                                background: #e2e2e2;
+                                                color: #5f5f5f;
+                                                text-transform: uppercase;
+                                                padding: 10px 100px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

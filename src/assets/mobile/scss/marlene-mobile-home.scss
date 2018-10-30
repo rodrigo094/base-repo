@@ -1,0 +1,163 @@
+html {
+
+	body {
+		
+		.e-content {
+
+			section {
+				float: left;
+				width: 100%;
+			}
+
+			.e-banners {
+				// @include container();
+				
+
+				img {
+					width: 100%;
+					height: auto;
+					vertical-align: middle;
+				}
+
+				&.e-banners-carousel {
+					margin-bottom: 15px;
+				}
+
+				// banners carousel
+				&__carousel {
+					margin-bottom: 15px;
+					.box-banner{
+						// @include container();
+						opacity: 0;
+						visibility: hidden;
+						&.slick-slide{
+							opacity: 1;
+							visibility: visible;
+						}
+						a {
+							outline: 0;
+						}
+						img{
+							width: 100%;
+							height: auto;
+							display: block;
+						}
+					}
+
+					.slick-list{
+						overflow: hidden;
+						// @include container();
+					}
+
+					.slick-arrow {
+						position: absolute;
+						top: 50%;
+						margin-top: -14px;
+						background: transparent;
+						text-indent: -9999px;
+						z-index: 5;
+						cursor: pointer;
+						outline: 0;
+
+						&.slick-prev {
+							//@include sprite($icon-carousel-prev);
+							left: 40px;
+						}
+						&.slick-next {
+							//@include sprite($icon-carousel-next);
+							right: 40px;
+						}
+					}
+					.slick-dots{
+						display: block;
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: 10px;
+						width: 100%;
+						text-align: center;
+						line-height: 0;
+						margin: auto;
+						z-index: 999;
+
+						li{
+							display: inline-block;
+							width: 10px;
+							height: 10px;
+							background: #827c7b;
+							border-radius: 100%;
+							margin: 0 2% 0 0;
+							transition: all .1s linear;
+
+							button{
+								font-size: 0;
+								text-indent: -999em;
+							}
+
+							&.slick-active{
+								background: #f3f3f3;
+							}
+
+							&:last-of-type{
+								margin: 0;
+							}
+						}
+					}
+				}
+
+				// banners statics
+				header {
+					display: none;
+				}
+
+				&__inline {
+					text-align: center;
+					.box-banner {
+						display: block;
+						width: 100%;
+						margin-bottom: 10px;
+						position: relative;
+						transform: transition(ease all 0.2s);
+						opacity: 1;
+						a {
+							display: block;
+						}
+						
+						&:hover {
+							opacity: 0.8;
+						}
+					}
+				}
+			}
+
+			.e-products {
+				header {
+					margin: 30px 0;
+					h2 {
+						text-align: center;
+						color: #000;
+						font-size: 20px;
+						text-transform: uppercase;
+					}
+				}
+				.prateleira {
+					> h2 {
+						display: none;
+					}
+					ul {
+						li {
+							
+							.e-vitrine {
+
+							}
+
+						}
+					}
+				}
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,494 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.e-produto {
+    .e-general {
+        font-family: 'Lato', sans-serif;
+        &__breadcrumb {
+            display: none;
+        }
+        &__product {
+            display: flex;
+            padding-top: 20px;
+            &--image {
+                width: 60%;
+                .apresentacao {
+                    #show {
+                        display: flex;
+                        #include {
+                            order: 2;
+                        }
+                        .thumbs {
+                            order: 1;
+                            width: 20%;
+                            padding: 0 20px;
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                height: auto;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &--specifications {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    &_name {
+                        .lead {
+                            padding: 10px 0;
+                            .productName {
+                                font-size: 15px;
+                                color: #000;
+                                font-family: 'Lato', sans-serif;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                            }
+                        }
+                        .cod-ref {
+                            display: flex;
+                            flex-direction: column;
+                            color: #707070;
+                            padding: 0 0 10px 0;
+                            .productReference {
+                                margin-left: 10px;
+                            }
+                        }
+                        .trustvox-rating {
+                            display: none;
+                        }
+                        .productFlags {
+                            display: none;
+                        }
+                    }
+                    &_control {
+                        color: #000;
+                        #productPrice {
+                            .descricao-preco {
+                                em {
+                                    padding: 10px 0;
+                                }
+                                .valor-de {
+                                    text-decoration: line-through;
+                                    font-size: 14px;
+                                    strong {
+                                        font-weight: 100;
+                                    }
+                                }
+                                .valor-por {
+                                    font-size: 17px;
+                                    strong {
+                                        font-weight: 100;   
+                                    }
+                                }
+                                .valor-dividido {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .economia-de {
+                                display: none;
+                            }
+                            .seletorSku {
+                                display: inline-block;
+                            }
+                        }
+                        .seletorSku {
+                            .sku-selector-container {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                ul {
+                                    padding: 10px 0;
+                                    width: 50%;
+                                    &.Cor {
+                                        display: none;
+                                    }
+                                    li {
+                                        padding: 10px 0;
+                                        width: 100%;
+                                        &.item-dimension-Tamanho {
+                                            span {
+                                                display: flex;
+                                                justify-content: flex-start;
+                                                width: 100%;
+                                                padding: 0 15px 0 0;
+                                                input {
+                                                    display: none;
+                                                }
+                                                label {
+                                                    border: 1px solid #c7c7c7;
+                                                    padding: 5px 10px;
+                                                    margin-right: 30px;
+                                                    cursor: pointer;
+                                                    &.checked {
+                                                        border: 2px solid #000;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .e-size-guide {
+                            display: flex;
+                            align-items: center;
+                            &__icon {
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                            &__link {
+                                padding: 0 5px;
+                                a {
+                                    color: #000;
+                                    font-size: 11px;
+                                    text-transform: uppercase;
+                                    text-decoration: underline;
+                                    text-decoration-color: #cccccc;
+                                }
+                            }
+                        }
+                        #BuyButton {
+                            display: flex;
+                            justify-content: space-around;
+                            padding: 20px 0;
+                            .buy-in-page-button {
+                                order: 2;
+                                padding: 18px 60px;
+                                background: #e2e2e2;
+                                color: #5a5a5a;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                letter-spacing: 1px;
+                            }
+                            .control-button {
+                                order: 1;
+                                position: absolute;
+                                left: 60%;                      
+                                input {
+                                    text-align: center;
+                                    width: 40px;
+                                    height: 53px;
+                                    background: #fff;
+                                    color: #5a5a5a;
+                                    border: 1px solid #c7c7c7;
+                                    cursor: pointer;
+                                    outline: none;
+                                    font-size: 25px;
+                                    &.more {
+                                        margin-right: 10px;
+                                    }
+                                    &.less {
+                                        margin-left: 30px;
+                                    }
+                                }
+                            }
+                            .buy-in-page-quantity {
+                                width: 40px;
+                                position: absolute;
+                                text-align: center;
+                                left: 62.9%;
+                                height: 53px;
+                                background: #fff;
+                                color: #5a5a5a;
+                                border: 1px solid #c7c7c7;
+                                outline: none;
+                                font-size: 25px;
+                            }
+                        }
+                        .e-addToGiftList,
+                        #calculoFrete {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+        &__tabs {
+            display: flex;
+            color: #000;
+            width: 100%;
+            justify-content: flex-end;
+            height: auto;
+            max-height: 180px;        
+            &--container {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                &-description {
+                    width: 50%;
+                    text-align: center;
+                    .e-title {
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        &.e-active {
+                            font-weight: 700;
+                            &:after {
+                                content: '';
+                                width: 30%;
+                                height: 1px;
+                                display: block;
+                                background: #e2e2e2;
+                                text-align: center;
+                                margin: 5px auto;
+                            }
+                        }
+                    }
+                    .e-dropdown {
+                        .productDescription {
+                            opacity: 0;
+                            overflow: hidden;
+                            visibility: hidden;
+                            transition: linear .2s;
+                            position: relative;
+                            left: 30%;
+                            text-align: left;
+                            letter-spacing: 1px;
+                        }
+                        &.e-active {
+                            position: relative;
+                            left: 0%;
+                            text-align: left;
+                            .productDescription {
+                                opacity: 1;
+                                overflow: visible;
+                                visibility: visible;
+                                padding: 10px 0;
+                                background: #fff;
+                            }
+                        }
+                    }
+                }
+                &-specification {
+                    width: 50%;
+                    text-align: center;
+                    .e-title {
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        &.e-active {
+                            font-weight: 700;
+                            &:after {
+                                content: '';
+                                width: 30%;
+                                height: 1px;
+                                display: block;
+                                background: #e2e2e2;
+                                text-align: center;
+                                margin: 5px auto;
+                            }
+                        }
+                    }
+                    .e-dropdown {
+                        #caracteristicas {
+                            opacity: 0;
+                            overflow: hidden;
+                            visibility: hidden;
+                            transition: linear .2s;
+                            padding: 20px 50px;
+                            h4,
+                            th {
+                                display: none;
+                            }
+                        }
+                        &.e-active {
+                            position: relative;
+                            left: 30%;
+                            text-align: left;
+                            #caracteristicas {
+                                opacity: 1;
+                                overflow: visible;
+                                visibility: visible;
+                                padding: 20px 50px;
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: auto;
+                                background: #fff;
+                                h4,
+                                th {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__buy-together {
+            display: flex;
+            &--container {
+                display: flex;
+                width: 100%;
+                >div {
+                    width: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: #000;
+                    #divTitulo {
+                        text-align: right;
+                        padding: 0 50px;
+                        display: none;
+                    }
+                    hr {
+                        display: none;
+                    }
+                    table {
+                        tbody {
+                            tr {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                td {
+                                    width: 25%;
+                                    .e-select-cor {
+                                        display: inline-block;
+                                        margin: 0 20px;
+                                        text-transform: uppercase;
+                                        font-size: 14px;
+                                        cursor: pointer;
+                                        span {
+                                            font-size: 0;
+                                            &:after {
+                                                content: 'Cor';
+                                                font-size: 14px;
+                                                text-transform: uppercase;
+                                                border: 1px solid #000;
+                                                padding: 5px 20px;
+                                            }
+                                        }
+                                        li {
+                                            display: none;
+                                        }
+                                    }
+                                    .e-select-tamanho {
+                                        display: inline-block;
+                                        margin: 0;
+                                        text-transform: uppercase;
+                                        font-size: 14px;
+                                        cursor: pointer;
+                                        span {
+                                            font-size: 0;
+                                            &:after {
+                                                content: 'Tamanho';
+                                                font-size: 14px;
+                                                text-transform: uppercase;
+                                                border: 1px solid #000;
+                                                padding: 5px 20px;
+                                            }
+                                        }
+                                        li {
+                                            display: none;
+                                        }
+                                    }
+                                    &.plus {
+                                        font-size: 22px;
+                                        width: auto;
+                                    }
+                                    &.equal {
+                                        display: none;
+                                    }
+                                    &.buy {
+                                        width: 20%;
+                                        text-align: center;
+                                        .e-title {
+                                            color: #000;
+                                            width: 100%;
+                                            margin-bottom: 15px;
+                                        }
+                                        .comprar-junto {
+                                            margin: 20px auto;
+                                            padding: 10px 50px;
+                                            background: #e2e2e2;
+                                            text-transform: uppercase;
+                                            a {
+                                                color: #5a5a5a;
+                                            }
+                                        }
+                                        .more {
+                                            display: none;
+                                        }
+                                    }
+                                    a {
+                                        width: 100%;
+                                        height: auto;
+                                        display: inline-block;
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__enjoy {
+            padding: 30px 0;
+            &--title {
+                display: flex;
+                justify-content: center;
+                font-size: 16px;
+                font-family: 'Lato', sans-serif;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                color: #000;
+                font-weight: 700;
+            }
+            &--container {
+                padding: 20px 0;
+                .vitrine {
+                    h2 {
+                        display: none;
+                    }
+
+                    > ul {
+                        display: none;
+
+                        &.slick-slider {
+                            display: block;
+                        }
+                    }
+
+                    .slick-list {
+                        .slick-track {
+                            .slick-slide {
+                                li {
+                                    .productItem {
+                                        .buy-button {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    .trustvox-container {
+        display: none;
+    }
+}

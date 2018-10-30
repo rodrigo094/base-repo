@@ -12,10 +12,10 @@ const NODE_MODULES = './node_modules';
 const SRC          = Taskerify.config.srcPath;
 const DIST         = Taskerify.config.distPath;
 
-const storeName    = 'tio-bob';
-const commomFiles  = ['globals', 'checkout'];
-const desktopFiles = ['general', 'home', 'product'];
-const mobileFiles  = ['general', 'home', 'product'];
+const storeName    = 'marlene';
+const commomFiles  = ['globals', 'checkout', 'mini-cart'];
+const desktopFiles = ['general', 'home', 'produto', 'institucional', 'department', 'category', 'empty', 'vitrine', 'busca-vazia'];
+const mobileFiles  = ['general', 'home', 'produto', 'institucional', 'department', 'category', 'empty', 'vitrine', 'busca-vazia'];
 
 Taskerify((mix) => {
     // PugJS Template

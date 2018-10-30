@@ -1,0 +1,154 @@
+
+.empty{
+
+  .e-general {
+
+  //   * {
+  //    font-family: $font;
+  //  }
+
+   .e-header {
+    background-color: #fff;
+  }
+
+  .e-content {
+
+    .e-empty {
+      margin: 65px 0;
+
+      > div {
+        display: block;
+        width: 100%;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &__search {
+
+        &-top {
+          text-transform: uppercase;
+          color: #000;
+
+          > * {
+            display: block;
+            line-height: 1;
+            text-align: center;
+          }
+
+          span {
+            font-size: 16px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+
+            &.e-empty__search-top {
+              font-weight: 20px;
+              margin-bottom: 25px;
+            }
+
+            strong {
+              margin-right: 10px;
+            }
+          }
+
+          h2 {
+            font-size: 23px;
+            font-weight: bold;
+          }
+        }
+
+        &-description {
+          margin-bottom: 10px;
+        }
+
+        &-number {
+          display: flex !important;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          i {
+            background: url(/arquivos/icon-emptyPhone.png) no-repeat center;
+            width: 20px;
+            height: 23px;
+            display: inline-block;
+          }
+
+          span {
+            margin: 0 7px;
+            letter-spacing: 1px;
+            float: left;
+          }
+        }
+
+        &-middle {
+          position: relative;
+          margin: 25px auto 65px;
+
+          legend, label, select {
+            display: none;
+          }
+
+          input {
+
+            &.fulltext-search-box {
+              color: #000;
+              line-height: 30px;
+              width: 100%;
+              border-bottom: 1px solid #000;
+              padding-left: 10px;
+              font-size: 12px;
+              letter-spacing: 1px;
+
+              &:focus {
+                color: #000;                      
+              }
+            }
+
+            &.btn-buscar {
+              position: absolute;
+              right: 10px;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              cursor: pointer;
+              font-size: 0;
+              background: url(/arquivos/icon-emptyLupa.png) no-repeat;
+              width: 17px;
+            }
+          }
+        }
+
+        &-bottom {
+
+          h4 {
+            color: #5b5b5f;
+            font-size: 13px;
+            margin-bottom: 10px;
+            line-height: 1;
+          }
+
+          ul {
+
+            li {
+              line-height: 25px;
+              color: #afafb5;
+              font-size: 12px;
+            } 
+          }
+        }
+      }
+    }
+
+    .e-vitrine-bottom {
+      text-align: center;
+      text-transform: uppercase;
+      color: #000;
+      letter-spacing: 5px;
+      margin-bottom: 75px;
+      
+    }
+  }
+}
+}

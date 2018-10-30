@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.e-departamento {
+    .e-general__content {
+        &--shelve {
+            .sub {
+                .orderBy {
+                    .e-group-orderby {
+                        span {
+                            &:after {
+                                content: '';
+                                background: url(/arquivos/down-arrow.png) no-repeat center;
+                                width: 15px;
+                                height: 10px;
+                                display: inline-block;
+                                background-size: 15px;
+                                right: -20px;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+            .vitrine {
+                .prateleira {
+                    li {
+                        .productFlags{
+                            .flag {
+                                text-align: center;
+                                color: #000;
+                                font-weight: 700;
+                                font-size: 14px;
+                                display: none; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

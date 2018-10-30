@@ -1,0 +1,30 @@
+/**
+ * iconfont-marlene Webfont
+ */
+@font-face {
+    font-family: 'iconfont-marlene';
+    src: url('/arquivos/iconfont-marlene.eot.css');
+    src: url('/arquivos/iconfont-marlene.eot.css') format('embedded-opentype'),
+        url('/arquivos/iconfont-marlene.ttf.css') format('truetype'),
+        url('/arquivos/iconfont-marlene.woff2.css') format('woff2'),
+        url('/arquivos/iconfont-marlene.woff.css') format('woff'),
+        url('/arquivos/iconfont-marlene.svg.css') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin iconfont-styles {
+    font-family: "iconfont-marlene";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+%iconfont {
+    @include iconfont-styles;
+}

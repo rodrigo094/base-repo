@@ -1,0 +1,34 @@
+@import './pages/general/general-base.scss';
+
+html {
+
+    body {
+
+        #ajaxBusy { 
+            display: none !important;   
+        }
+
+        .e-general {
+            float: left;
+            width: 100%;
+
+            // & * {
+            //     font-family: $font;
+            // }
+
+            .e-hide {
+                display: none;
+            }
+
+            .e-content {
+                width: 100%;
+                float: left;
+                position: relative;
+            }
+        }
+
+        #vtexIdContainer{
+            position: fixed !important;
+        }
+    }
+}

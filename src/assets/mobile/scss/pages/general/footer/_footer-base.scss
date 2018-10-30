@@ -1,2 +1,204 @@
-
-@import './footer-main';
+.e-footer {
+    background-color: #e5e5e5;
+    font-family: 'Lato', sans-serif;
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+        border-bottom: 1px solid #000;
+        padding: 20px 5px;
+        &-institutional {
+            display: flex;
+            flex-direction: column;
+            &-title {
+                padding: 10px 0;
+                span {
+                    color: #000;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+            }
+            &-content {
+                li {
+                    padding: 10px 0;
+                    a,
+                    span {
+                        color: #000;
+                        text-transform: uppercase;
+                        font-weight: 200;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &-help {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            &-title {
+                padding: 10px 0;
+                span {
+                    color: #000;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+            }
+            &-content {
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                li {
+                    padding: 10px 0;
+                    padding-right: 20px;
+                    a,
+                    span {
+                        color: #000;
+                        text-transform: uppercase;
+                        font-weight: 200;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 10px;
+            &-payment {
+                &_title {
+                    padding-bottom: 15px;
+                    span {
+                        color: #000;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    }
+                }
+                &_carts {
+                    li {
+                        background: url(/arquivos/payment-accept.png) no-repeat center;
+                        width: 350px;
+                        height: 30px;
+                        display: flex;
+                        background-size: 350px;
+                    }
+                }
+            }
+            &-social {
+                top: -10px;
+                position: relative;
+                &_title {
+                    padding-bottom: 15px;
+                    span {
+                        color: #000;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    } 
+                }
+                &_content {
+                    display: flex;
+                    li {
+                        a {
+                            .facebook-footer {
+                                background: url(/arquivos/facebook-icon.png) no-repeat center;
+                                width: 50px;
+                                height: 50px;
+                                display: inline-block;
+                            }
+                            .instagram-footer {
+                                background: url(/arquivos/instagram-icon.png) no-repeat center;
+                                width: 50px;
+                                height: 50px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &--bottom {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        margin: 0 50px;
+        padding: 20px 5px;
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 280px;
+            &-departments {
+                &_title {
+                    color: #000;
+                    font-weight: 800;
+                    text-transform: uppercase;                
+                }
+                &_content {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        height: 150px;
+                        flex-wrap: wrap;
+                        li {
+                            padding: 10px 0;
+                            padding-right: 30px;
+                            a {
+                                color: #000;
+                                text-transform: uppercase;
+                                font-weight: 200;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-procurados {
+                &_title {
+                    color: #000;
+                    font-weight: 800;
+                    text-transform: uppercase; 
+                }
+                &_content {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        height: 150px;
+                        flex-wrap: wrap;
+                        li {
+                            padding: 10px 0;
+                            padding-right: 30px;
+                            a {
+                                color: #000;
+                                text-transform: uppercase;
+                                font-weight: 200;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-security {
+                &_title {
+                    span {
+                        color: #000;
+                        font-weight: 800;
+                        text-transform: uppercase; 
+                    }
+                }
+            }
+        }
+    }
+    &--page {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        &-text {
+            span {
+                color: #000;
+            }
+        }
+    }
+}

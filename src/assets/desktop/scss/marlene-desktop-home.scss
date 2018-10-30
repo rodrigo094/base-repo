@@ -1,0 +1,118 @@
+
+.e-home {
+    .e-general {
+     &__banner {
+       &-main {
+         &--desktop {
+           width: 100%;
+           height: auto;
+           img {
+             width: 100%;
+           }
+         }
+       }
+     }
+     &__banners {
+       &-category {
+         &--container {
+           display: flex;
+           .box-banner {
+             width: 100%;
+             height: auto;
+             a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              img {
+                padding: 10px;
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__shelve {
+     
+     &-launch, &-dear {
+       padding: 40px 0;
+  
+       &--container {
+  
+        .vitrine {
+          > ul {
+            display: none;
+  
+            &.slick-slider {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__newsletter {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px 30px;
+   &-title {
+     font-size: 33px;
+     letter-spacing: 5px;
+     font-weight: 100;
+     color: #000;
+     text-transform: uppercase;
+     font-family: 'Lato', sans-serif;
+   }
+   &-text {
+     font-size: 14px;
+     color: #000;
+     font-family: 'Lato', sans-serif;
+     display: flex;
+     align-items: center;
+     font-weight: 600;
+   }
+   .newsletter {
+     h3 {
+       display: none;
+     }
+     fieldset {
+       p {
+         display: none;
+       }
+       #newsletterClientName {
+        padding-left: 15px;
+        width: 250px;
+        border: 1px solid #c7c7c7;
+        height: 45px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: #c7c7c7;
+        outline: none;
+      }
+      #newsletterClientEmail {
+        padding-left: 15px;
+        width: 250px;
+        border: 1px solid #c7c7c7;
+        height: 45px;
+        margin: 0 20px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: #c7c7c7;
+        outline: none;
+      }
+      #newsletterButtonOK {
+        padding: 15px;
+        margin: 0 15px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        background: #e2e2e2;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  }
+  }
+  }
