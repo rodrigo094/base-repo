@@ -17,6 +17,22 @@ var MarleneEnxovais_Produto = {
             });
         },
 
+        slickProduct : function() {
+            $('#show .thumbs').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        },
+
+        slickShelve : function() {
+            $('.e-vitrine .e-products__list prateleira ul').slick({
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        },
+
         btnAviseme : function() {
             $('.e-product__info--buy .portal-notify-me-ref form .notifyme-form .btn-ok').val('Avise-me');
         },
@@ -24,6 +40,8 @@ var MarleneEnxovais_Produto = {
         init : function() {
             this.activeDescription();
             this.btnAviseme();
+            this.slickProduct();
+            this.slickShelve();
         },
 
         init_ajax: function() {

@@ -43,9 +43,10 @@
                     .fulltext-search-box {
                         border: none;
                         border-bottom: 1px solid #a1a1a1;
-                        width: 220px;
+                        width: 290px;
                         padding-bottom: 5px;
                         outline: none;
+                        color: #a1a1a1;
                     }
                     .btn-buscar {
                         font-size: 0;
@@ -53,7 +54,7 @@
                         width: 25px;
                         height: 25px;
                         cursor: pointer;
-                        left: 200px;
+                        left: 270px;
                         position: relative;
                         top: -27px;
                         background-size: 18px;
@@ -65,7 +66,7 @@
             &--list {
                 display: flex;
                 align-items: center;
-                width: 70%;
+                width: 60%;
                 justify-content: center;
                 &-icon {
                     background: url(/arquivos/gift.png) no-repeat center;
@@ -109,7 +110,7 @@
             &--telephone {
                 display: flex;
                 align-items: center;
-                width: 70%;
+                width: 60%;
                 justify-content: center;
                 &-icon {
                     background: url(/arquivos/phone-call.png) no-repeat center;
@@ -118,6 +119,7 @@
                     display: inline-block;
                     background-size: 25px;
                     padding: 0 20px;
+                    transform: rotate(20deg);
                 }
                 &-content {
                     display: flex;
@@ -139,8 +141,8 @@
             &--store {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                width: 70%;
+                justify-content: flex-start;
+                width: 40%;
                 &-icon {
                     background: url(/arquivos/location.png) no-repeat center;
                     width: 30px;

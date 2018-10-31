@@ -38,15 +38,20 @@ function removeSpecification() {
 
 function cloneBenefits(){
     var benefits = $('#productDescription #caracteristicas td.Beneficios');
+    var benefitsArray = $(benefits).text();
+
+    var beneficios = benefitsArray.split(',');
+
+    console.log(beneficios);
+
 
     if($(benefits).length != 0) {
-        // $('.cod-ref').append(benefits);
-        $('.cod-ref').append('<ul class="beneficiosList e-dropdown"></ul>');
-        for (var l = 0; l <= benefits.length - 1; l++) {
-             != (benefits[l]) && (".beneficiosList").append("<li>" + (benefits[l]) + "</li>")
+        // $('.e-general__product--specifications-container_benefits').append(beneficios);
+        $('.e-general__product--specifications-container_benefits').append('<ul class="beneficiosList e-dropdown">'+ beneficios +'</ul>');
+        for (var i = 0; i <= beneficios.length - 1; i++) {
+            
         }
     }
-
     
 };
 

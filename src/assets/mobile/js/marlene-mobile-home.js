@@ -17,7 +17,7 @@ var Bigshirts_Home = {
 
         sliderVitrines : function(){
             var options = {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 vertical: false,
                 autoplay: false,

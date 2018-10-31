@@ -34,6 +34,13 @@
                                 display: none; 
                             }
                         }
+                        .productItem {
+                            .buy-button {
+                                a {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
                     }
                 }
             }

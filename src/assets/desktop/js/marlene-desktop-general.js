@@ -1,19 +1,19 @@
 //Funções Home
 
 function slickMaisVendidos(){
-    $('.e-home .e-general__shelve-launch--container ul').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
+    // $('.e-home .e-general__shelve-launch--container ul').slick({
+    //     infinite: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1
+    // });
 };
 
 function slickMaisQueridinhos(){
-    $('.e-home .e-general__shelve-dear--container ul').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
+    // $('.e-home .e-general__shelve-dear--container ul').slick({
+    //     infinite: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1
+    // });
 };
 
 //Funções Categoria
@@ -46,13 +46,13 @@ function removeHelperComplement(){
 //Funções Produto
 
 function slickProductPage(){
-    $('#show .thumbs').slick({
-        infinite: true,
-        vertical: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        slide: "li"
-    });
+    // $('#show .thumbs').slick({
+    //     infinite: true,
+    //     vertical: true,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     slide: "li"
+    // });
 };
 
 function activeDescription() {
@@ -87,11 +87,11 @@ function selectorSku() {
 };
 
 function slickPodeGostar(){
-    $('.e-general__enjoy--container ul').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
+    // $('.e-general__enjoy--container ul').slick({
+    //     infinite: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1
+    // });
 };
 
 function activeSize() {
@@ -101,6 +101,13 @@ function activeSize() {
         $(sizeSelect).toggleClass('e-active');
     });
 };
+
+function scrollHeader() {
+    $('.e-header').on('scroll', function(){
+        $('.e-header__content-topo--logo').css('width', '30%');
+    });
+};
+
 
 $(document).ready(function(){
     slickMaisVendidos();
@@ -115,4 +122,5 @@ $(document).ready(function(){
     selectorSku();
     slickPodeGostar();
     activeSize();
+    scrollHeader();
 });
