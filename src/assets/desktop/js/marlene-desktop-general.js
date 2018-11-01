@@ -55,6 +55,17 @@ function slickProductPage(){
     // });
 };
 
+function scrollTop() {
+    $(window).on('scroll', function (event) {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            $(".e-header").addClass('e-fixed');
+        } else {
+            $(".e-header").removeClass('e-fixed');
+        }
+    });
+};
+
 function activeDescription() {
     $('.e-general__tabs--container-description .e-title').click(function(){
         $('.e-general__tabs--container-description #productDescription').toggleClass('e-active');
@@ -102,12 +113,6 @@ function activeSize() {
     });
 };
 
-function scrollHeader() {
-    $('.e-header').on('scroll', function(){
-        $('.e-header__content-topo--logo').css('width', '30%');
-    });
-};
-
 
 $(document).ready(function(){
     slickMaisVendidos();
@@ -122,5 +127,5 @@ $(document).ready(function(){
     selectorSku();
     slickPodeGostar();
     activeSize();
-    scrollHeader();
+    scrollTop();
 });

@@ -2,7 +2,17 @@
     display: none !important;
 }
 
+* {
+    transition: linear .2s;
+}
+
 .e-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999999;
     &__content {
         @media (max-width: 992px) {
             display: none;
@@ -43,10 +53,11 @@
                     .fulltext-search-box {
                         border: none;
                         border-bottom: 1px solid #a1a1a1;
-                        width: 290px;
+                        width: 350px;
                         padding-bottom: 5px;
                         outline: none;
                         color: #a1a1a1;
+                        padding-left: 5px;
                     }
                     .btn-buscar {
                         font-size: 0;
@@ -54,7 +65,7 @@
                         width: 25px;
                         height: 25px;
                         cursor: pointer;
-                        left: 270px;
+                        left: 330px;
                         position: relative;
                         top: -27px;
                         background-size: 18px;
@@ -300,6 +311,317 @@
     &__mobile {
         @media (max-width: 992px) {
             display: block !important;
+        }
+    }
+
+    &.e-fixed {
+        .e-header__content {
+            @media (max-width: 992px) {
+                display: none;
+            }
+            &-topo {
+                display: flex;
+                justify-content: space-between;
+                height: 50px !important;
+                align-items: center;
+                overflow: hidden;
+                &--logo {
+                    width: 30%;
+                    height: auto;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: inline-block;
+                        img {
+                            width: 80%;
+                            height: auto;
+                            padding-top: 5px;
+                            margin: 10px;
+                        }
+                    }
+                }
+                &--search {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    justify-content: center;
+                    top: 15px;
+                    position: relative;
+                    left: 20px;
+                    .busca {
+                        display: flex;
+                        legend,
+                        label,
+                        select {
+                            display: none;
+                        }
+                        .fulltext-search-box {
+                            border: none;
+                            border-bottom: 1px solid #a1a1a1;
+                            width: 250px;
+                            padding-bottom: 5px;
+                            outline: none;
+                            color: #a1a1a1;
+                        }
+                        .btn-buscar {
+                            font-size: 0;
+                            background: url(/arquivos/search-icon.png) no-repeat center;
+                            width: 25px;
+                            height: 25px;
+                            cursor: pointer;
+                            left: 230px;
+                            position: relative;
+                            top: -27px;
+                            background-size: 18px;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+                &--list {
+                    display: flex;
+                    align-items: center;
+                    width: 40%;
+                    justify-content: flex-end;
+                    &-icon {
+                        background: url(/arquivos/gift.png) no-repeat center;
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        background-size: 20px;
+                        padding: 0 25px;
+                    }
+                    &-content {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Lato', sans-serif;
+                        .title {
+                            a {
+                                white-space: nowrap;
+                                color: #000;
+                                font-size: 13px;
+                                font-weight: 600;
+                                padding-bottom: 5px;
+                                text-decoration: none;
+                            }
+                        }
+                        .content {
+                            a {
+                                color: #a1a1a1;
+                                font-size: 13px;
+                                margin: 0;
+                                text-decoration: underline;
+                                &:first-child {
+                                    &:after {
+                                        content:'|';
+                                        font-size: 13px;
+                                        margin: 0 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &--telephone {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    justify-content: center;
+                    &-icon {
+                        background: url(/arquivos/phone-call.png) no-repeat center;
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        background-size: 20px;
+                        padding: 0 20px;
+                        transform: rotate(20deg);
+                    }
+                    &-content {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Lato', sans-serif;
+                        align-items: flex-start;
+                        .title {
+                            color: #000;
+                            font-size: 13px;
+                            font-weight: 600;
+                            padding-bottom: 5px;
+                        }
+                        .text {
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                    }
+                }
+                &--store {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 30%;
+                    &-icon {
+                        background: url(/arquivos/location.png) no-repeat center;
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        background-size: 20px;
+                        padding: 0 20px;
+                    }
+                    &-content {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Lato', sans-serif;
+                        .title {
+                            color: #000;
+                            font-size: 13px;
+                            font-weight: 600;
+                            padding-bottom: 3px;
+                        }
+                        .content {
+                            font-size: 13px;
+                            text-decoration: underline;
+                            a {
+                                color: #a1a1a1;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                &--account {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #f6f6f6;
+                    justify-content: center;
+                    width: 30%;
+                    height: 100%;
+                    &-icon {
+                        background: url(/arquivos/account-icon.png) no-repeat center;
+                        width: 100%;
+                        height: 30px;
+                        background-size: 20px;
+                        display: none;
+                    }
+                    &-content {
+                        font-size: 14px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        text-align: center;
+                        font-family: 'Lato', sans-serif;
+                        a {
+                            color: #000;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 13px;                        
+                        }
+                    }
+                }
+                &--bag {
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #eeeeee;
+                    height: 100%;
+                    &-icon {
+                        background: url(/arquivos/shopping-bag.png) no-repeat center;
+                        width: 100%;
+                        height: 30px;
+                        background-size: 20px;
+                        display: none;
+                    }
+                    a {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
+                        text-decoration: none;
+                        span {
+                            color: #000;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            font-family: 'Lato', sans-serif;
+                            .carrinho {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &--menu {
+                display: flex;
+                width: 100%;
+                height: 38px;
+                align-items: center;
+                background-color: #e2e2e2;
+                text-decoration: none;
+                &-list {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-around;
+                    li {
+                        padding: 20px 0;
+                        position: relative;
+                        >a {
+                            color: #5f5f5f;
+                            text-transform: uppercase;
+                            font-family: "Lato";
+                            font-weight: 600;
+                            text-decoration: none;
+                            position: relative;
+                        }
+                        ul {
+                            display: none;
+                        }
+                        &:hover {
+                            ul {
+                                display: inline-block;
+                                position: absolute;
+                                left: 0;
+                                top: 45px;
+                                background: #e2e2e2;
+                                padding: 0 70px 0 20px;
+                                text-align: left;
+                                z-index: 9999999;
+                                li {
+                                    white-space: nowrap;
+                                    a {
+                                        font-family: "Lato";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        &:hover {
+                                            &:after {
+                                                width: 100%;
+                                                right: 0;
+                                                text-shadow: none !important;
+                                            }
+                                        }
+                                        &:after {
+                                            content: '';
+                                            display: block;
+                                            width: 0;
+                                            height: 1px;
+                                            background: #646464;
+                                            position: absolute;
+                                            right: 100%;
+                                            transition: all .5s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

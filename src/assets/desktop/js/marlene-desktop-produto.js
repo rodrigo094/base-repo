@@ -47,9 +47,10 @@ function cloneBenefits(){
 
     if($(benefits).length != 0) {
         // $('.e-general__product--specifications-container_benefits').append(beneficios);
-        $('.e-general__product--specifications-container_benefits').append('<ul class="beneficiosList e-dropdown">'+ beneficios +'</ul>');
-        for (var i = 0; i <= beneficios.length - 1; i++) {
-            
+        $('.e-general__product--specifications-container_benefits').append('<ul class="beneficiosList e-dropdown"></ul>');
+        for (var i = 0; i < beneficios.length; i++) {
+            var itensBenefits = beneficios[i];
+            $('.e-general__product--specifications-container_benefits .beneficiosList').append("<li class='e-beneficios'>" + itensBenefits + "</li>");
         }
     }
     
